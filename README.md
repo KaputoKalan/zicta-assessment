@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Assignment: Implement a CRUD System
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Your task is to implement a CRUD (Create, Read, Update, Delete) system where a user can submit a form and view it on the landing page.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Form Fields**: The form should have the following fields:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   - Name (required)
+   - Email (required, unique)
+   - Description
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Database**: Use the provided `docker-compose` file to start the database.
 
-## Learn More
+3. **ORM**: Use Prisma ORM for the model.
 
-To learn more about Next.js, take a look at the following resources:
+4. **API**: You can use server actions or set up API routes for handling requests.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Steps
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Setup the Database**: Use the provided `docker-compose` file to start your database.
 
-## Deploy on Vercel
+2. **Create the Form**: Implement a form with the required fields. Ensure that the 'Name' and 'Email' fields are set as required. Also, ensure that the 'Email' field is unique.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Implement CRUD Operations**: Implement the following operations:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   - **Create**: When a user submits the form, create a new record in the database.
+   - **Read**: Display the submitted information on the landing page.
+   - **Update**: Allow users to update their information.
+   - **Delete**: Allow users to delete their information.
+
+4. **Use Prisma ORM**: Use Prisma ORM to interact with your database. This includes creating, reading, updating, and deleting records.
+
+5. **Setup API**: You can use server actions or set up API routes for handling requests. This will be used to interact with the form and perform the CRUD operations.
+
+## Submission
+
+Once you have completed the assignment, please submit your code for review.
+
+Good luck!
